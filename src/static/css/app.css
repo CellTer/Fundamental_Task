@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #696969;
+}
+.container {
+  padding: 20px;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen dalam kolom */
+  align-items: center; /* Mengatur posisi horizontal ke tengah */
+  margin-top: 20px; /* Atur margin atas jika diperlukan */
+}
+
+#search-input {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Atur margin bawah untuk memberikan jarak antara input dan tombol */
+  width: 1800px;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex; /* Mengatur tampilan topnav menjadi flex */
+  justify-content: center; /* Mengatur posisi horizontal ke tengah */
+  align-items: center; /* Mengatur posisi vertikal ke tengah */
+  flex-direction: column; /* Mengatur elemen dalam kolom */
+}
+
+.topnav a {
+  float: none; /* Menghilangkan float pada tautan */
+  width: auto; /* Mengatur lebar tautan menjadi otomatis */
+  margin-bottom: 10px; /* Atur margin bawah untuk memberikan jarak antara tautan dan kotak pencarian */
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.card-desc {
+  padding: 200px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .card {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.poster {
+  margin-right: 20px; /* Mengatur jarak kanan antara gambar poster dan elemen-elemen lainnya */
+}
+
+.poster {
+  margin-right: 20px; /* Mengatur jarak kanan antara gambar poster dan elemen-elemen lainnya */
+  border: 2px solid #ccc; /* Menambahkan border dengan ketebalan 2px dan warna abu-abu */
+  border-radius: 5px; /* Menambahkan border radius untuk sudut yang lebih bulat */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan dengan x-offset 2px, y-offset 2px, blur 5px, dan warna rgba(0, 0, 0, 0.3) */
+}
+
+.card h2 {
+  font-weight: bold; /* Memberi efek tebal pada judul */
+}
